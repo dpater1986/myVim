@@ -64,9 +64,17 @@ call plug#end()
 " }}}
 " MAPPINGS -------------------------------------------------------------{{{
 " }}}
-" STATUS LINE -----------------------------------------------------------{{{
+" STATUS LINE ----------------------------------------------------------{{{
 " }}}
-" Looks ----------------------------------------------------------------{{{
+" LOOKS ----------------------------------------------------------------{{{
 colorscheme onedark 
 set background=dark
+" }}}
+" SCRIPTS---------------------------------------------------------------{{{
+" This will enable code folding.
+" Use the marker method of folding.
+augroup filetype_vim
+    autocmd!
+    autocmd FileType vim setlocal foldmethod=marker
+augroup END
 " }}}
