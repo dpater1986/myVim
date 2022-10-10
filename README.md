@@ -29,5 +29,5 @@ git pull origin main
 
 # Downloading vim
 ```
-wget https://raw.githubusercontent.com/dpater1986/myVim/main/vimrc -o $HOME/.vimrc
+wget https://raw.githubusercontent.com/dpater1986/myVim/main/vimrc -O $HOME/.vimrc
 ```
