@@ -1,4 +1,4 @@
 #!/bin/bash
 
-path='pwd'
+path=$PWD
 ln -s $path/vimrc $HOME/.vimrc
