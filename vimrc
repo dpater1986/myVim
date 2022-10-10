@@ -36,9 +36,11 @@ set wildmode=list:longest
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 set path+=**
 set spell spelllang=en_us,nl
+
 " }}}
 " PLUGINS --------------------------------------------------------------{{{
-" Install plug if not installed
+" Install {{{
+    " Install plug if not installed
 let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
 if empty(glob(data_dir . '/autoload/plug.vim'))
   silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
@@ -55,20 +57,34 @@ endif
 autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
   \| PlugInstall --sync | source $MYVIMRC
 \| endif
+" }}}
 
 call plug#begin('~/.vim/plugged')
 
     Plug 'joshdick/onedark.vim' "The One Dark Theme
-    
+    Plug 'vim-airline/vim-airline' "Airline lint 
+    Plug 'vim-airline/vim-airline-themes' "Airline lint them
+
 call plug#end()
 " }}}
 " MAPPINGS -------------------------------------------------------------{{{
 " }}}
 " STATUS LINE ----------------------------------------------------------{{{
+"g:onedark_hide_enmofbuffer:1
+"g:ondedark_termcolors:256
+"g:onedark_terminal_italics:1
+let g:lightline = {
+  \ 'colorscheme': 'onedark',
+  \ }
 " }}}
 " LOOKS ----------------------------------------------------------------{{{
 colorscheme onedark 
 set background=dark
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#left_sep = ' '
+let g:airline#extensions#tabline#left_alt_sep = '|'
+let g:airline#extensions#tabline#formatter = 'default'
+
 " }}}
 " SCRIPTS---------------------------------------------------------------{{{
 " This will enable code folding.
