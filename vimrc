@@ -35,7 +35,7 @@ set wildmenu
 set wildmode=list:longest
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 set path+=**
-set spell spelllang=en_us,nl
+set spell spelllang=nl,en_us
 
 let g:auto_save=1
 let g:auto_save_events=["InsertLeave", "TextChanged"]
@@ -101,7 +101,11 @@ let g:lightline = {
 " LOOKS ----------------------------------------------------------------{{{
 colorscheme onedark 
 set background=dark
+set termguicolors
+set noshowmode
 let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+let g:bufferline_echo = 0
 let g:airline#extensions#tabline#formatter = 'default'
 
 "}}}
