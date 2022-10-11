@@ -16,7 +16,7 @@ filetype plugin on
 syntax on
 set number relativenumber
 set cursorline
-highlight Cursorline ctermbg=Yellow cterm=bold guibg=#2b2b2b
+"highlight Cursorline ctermbg=Yellow cterm=bold guibg=#2b2b2b
 set cursorcolumn
 set shiftwidth=4
 set tabstop=4
@@ -74,7 +74,8 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 
 call plug#begin('~/.vim/plugged')
 
-    Plug 'joshdick/onedark.vim' "The One Dark Theme
+    Plug 'joshdick/onedark.vim' "The One Dark Themes
+    Plug 'morhetz/gruvbox' "The GruvBox Themes
     Plug 'vim-airline/vim-airline' "Airline lint 
     Plug 'vim-airline/vim-airline-themes' "Airline lint them
     Plug 'plasticboy/vim-markdown' "Markdown syntax highlighting
@@ -99,7 +100,7 @@ let g:lightline = {
   \ }
 " }}}
 " LOOKS ----------------------------------------------------------------{{{
-colorscheme onedark 
+colorscheme gruvbox
 set background=dark
 set termguicolors
 set noshowmode
