@@ -1,10 +1,14 @@
-# How to use my vim setup?
-There are two ways to use this:
-1 Setup by cloning it
-1 Setup by downloading vim.
+# My VIM
 
-# 1 Setup by cloning it
-1 Clone this repository:
+This is my personal preference.
+If you have an idea i'm all ears and maybe I can add them.
+
+But a vim setup it is all personal ofcourse and hopefully you can get started this way.
+Love to hear you're tought about my vim-setup.
+
+## How to use my vim setup?
+
+### Clone this repository:
 For HTTPS:
 ```
 git clone https://github.com/dpater1986/myVim.git myvim
@@ -27,7 +31,3 @@ Now you can update it by going in the directory and type:
 cd myvim && git pull origin main && ./setup.sh && cd
 ```
 
-# Downloading vim
-```
-wget https://raw.githubusercontent.com/dpater1986/myVim/main/vimrc -O $HOME/.vimrc
-```
