@@ -38,7 +38,7 @@ set showmode
 
 set path+=**
 set wildmenu
-set wildignore+=**/.git/**,*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
+set wildignore+=**/.git/**,**/.docx/**,**/.jpg**/,**/.png/**,**/.gif/**,**/.pdf/**,**/.pyc/**,**/.exe/**,**/.flv/**,**/.img/**,**/.xlsx/**
 set nohlsearch
 set incsearch
 set history=1000
