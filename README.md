@@ -7,24 +7,24 @@ There are two ways to use this:
 1 Clone this repository:
 For HTTPS:
 ```
-git clone https://github.com/dpater1986/myVim.git
+git clone https://github.com/dpater1986/myVim.git myvim
 ```
 For SSH
 ```
-git clone git@github.com:dpater1986/myVim.git
+git clone git@github.com:dpater1986/myVim.git myvim
 ```
 For GitHub CLI
 ```
-gh repo clone dpater1986/myVim
+gh repo clone dpater1986/myVim myvim
 ```
 1 Run this command:
 ```
-cd myVim && chmod +x setup.sh && ./setup.sh
+cd myvim && chmod +x setup.sh && ./setup.sh
 ```
 
 Now you can update it by going in the directory and type:
 ```
-git pull origin main
+cd myvim && git pull origin main && ./setup.sh && cd
 ```
 
 # Downloading vim
