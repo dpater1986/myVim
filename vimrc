@@ -23,6 +23,9 @@ set colorcolumn=80
 set signcolumn=yes
 set cmdheight=2
 
+set spell
+set spelllang=nl,en,en_us
+
 filetype on
 filetype plugin on
 syntax on
