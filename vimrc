@@ -59,3 +59,5 @@ call plug#end()
 
 colorscheme gruvbox
 hi Normal guibg=NONE ctermbg=NONE
+
+let mapleader=" "
