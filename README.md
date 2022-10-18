@@ -11,15 +11,15 @@ Love to hear you're tought about my vim-setup.
 ### Clone this repository:
 For HTTPS:
 ```
-git clone https://github.com/dpater1986/myVim.git myvim
+git clone https://github.com/dpater1986/myvim.git myvim
 ```
 For SSH
 ```
-git clone git@github.com:dpater1986/myVim.git myvim
+git clone git@github.com:dpater1986/myvim.git myvim
 ```
 For GitHub CLI
 ```
-gh repo clone dpater1986/myVim myvim
+gh repo clone dpater1986/myvim myvim
 ```
 1 Run this command:
 ```
