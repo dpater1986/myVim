@@ -54,6 +54,10 @@ set hidden
 call plug#begin()
 
 Plug 'gruvbox-community/gruvbox'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
+
 
 call plug#end()
 
